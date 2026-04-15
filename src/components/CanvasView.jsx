@@ -28,7 +28,7 @@ export function CanvasView({ canvasRef, isRendering, isDone, progress, statusMsg
               ))}
             </div>
             <div className={s.emptyMsg}>
-              <div className={s.emptyTitle}>PIXELALCHEMY</div>
+              <div className={s.emptyTitle}>MOSAICRA</div>
               <div className={s.emptyHint}>Upload an image → select an effect → hit generate</div>
               <div className={s.effectCount}>28 effects · 12 color modes · 7 backgrounds</div>
             </div>

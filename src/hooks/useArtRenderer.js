@@ -37,7 +37,7 @@ export function useArtRenderer() {
   const downloadPng = useCallback((name) => {
     if (!canvasRef.current||!isDone) return;
     const a=document.createElement('a'); a.href=canvasRef.current.toDataURL('image/png');
-    a.download=`PIXELALCHEMY-${name}.png`; a.click();
+    a.download=`MOSAICRA-${name}.png`; a.click();
   }, [isDone]);
 
   const downloadSvg = useCallback((name) => {
@@ -47,7 +47,7 @@ export function useArtRenderer() {
     const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><image href="${data}" width="${w}" height="${h}"/></svg>`;
     const blob=new Blob([svg],{type:'image/svg+xml'});
     const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
-    a.download=`PIXELALCHEMY-${name}.svg`; a.click(); URL.revokeObjectURL(a.href);
+    a.download=`MOSAICRA-${name}.svg`; a.click(); URL.revokeObjectURL(a.href);
   }, [isDone]);
 
   return { canvasRef, isRendering, progress, statusMsg, isDone, render, cancel, downloadPng, downloadSvg };
