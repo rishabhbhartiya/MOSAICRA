@@ -1,0 +1,42 @@
+.panel { display:flex; flex-direction:column; }
+
+.section { border-bottom:1px solid var(--b0); }
+.section:last-child { border-bottom:none; }
+
+.secHdr {
+  width:100%; display:flex; justify-content:space-between; align-items:center;
+  padding:8px 0 8px; font-size:10px; font-weight:600; text-transform:uppercase;
+  letter-spacing:.08em; color:var(--t2); cursor:pointer;
+  font-family:var(--font-mono); transition:color var(--tf);
+}
+.secHdr:hover { color:var(--t1); }
+.chevron { font-size:14px; transition:transform var(--tn); display:inline-block; }
+.chevronOpen { transform:rotate(90deg); }
+
+.secBody { padding-bottom:12px; display:flex; flex-direction:column; gap:10px; }
+
+.sliderRow { display:flex; flex-direction:column; gap:5px; }
+.sliderHdr { display:flex; justify-content:space-between; align-items:center; }
+.sliderLbl { font-size:11px; color:var(--t1); font-family:var(--font-mono); }
+.sliderVal { font-size:11px; font-weight:500; color:var(--t1); font-family:var(--font-mono); font-variant-numeric:tabular-nums; min-width:32px; text-align:right; }
+.accentVal { color:var(--acid); }
+
+.trackWrap input[type=range] {
+  background: linear-gradient(to right, var(--acid) var(--pct,0%), var(--b2) var(--pct,0%));
+}
+
+.chips { display:grid; gap:3px; }
+.chip {
+  padding:4px 6px; font-size:10px; font-weight:500;
+  border:1px solid var(--b1); border-radius:4px;
+  color:var(--t2); cursor:pointer; font-family:var(--font-mono);
+  transition:all var(--tf); text-align:center; white-space:nowrap;
+  overflow:hidden; text-overflow:ellipsis;
+}
+.chip:hover { color:var(--t0); border-color:var(--b3); background:var(--bg-3); }
+.chipOn { color:var(--acid) !important; border-color:var(--acid) !important; background:var(--acid-bg) !important; }
+
+.colorGroup { display:flex; flex-direction:column; gap:4px; }
+.groupLbl { font-size:9px; text-transform:uppercase; letter-spacing:.08em; color:var(--t2); font-family:var(--font-mono); }
+
+.hint { font-size:10px; color:var(--t2); font-family:var(--font-mono); font-style:italic; }
