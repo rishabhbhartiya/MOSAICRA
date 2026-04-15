@@ -1,3 +1,5 @@
+MOSAICRA
+
 # Image Art Studio
 
 Transform any photo into stunning artistic styles: ASCII art, halftone, pointillism, thread art, LEGO mosaics, keyboard mosaics, text fill, pixel art, and Voronoi/crystal effects.
