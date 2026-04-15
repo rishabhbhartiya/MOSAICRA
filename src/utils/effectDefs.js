@@ -81,7 +81,7 @@ export const DEFAULT_SETTINGS = {
   scale:      100,
   colorMode:  'color',
   bgMode:     'dark',
-  fillText:   'PIXELIUM ART STUDIO CREATE',
+  fillText:   'PIXELALCHEMY ART STUDIO CREATE',
   // per-effect extras
   dotShape:   'circle',   // circle | diamond | star
   glitchAmt:  40,

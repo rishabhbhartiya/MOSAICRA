@@ -49,7 +49,7 @@ export async function renderDenseAscii(canvas,imgEl,opts,onP) {
 // ── TEXT FILL ────────────────────────────────────────────────
 export async function renderTextFill(canvas,imgEl,opts,onP) {
   const {ctx,cw,ch,aspect}=setup(canvas,imgEl,opts);
-  const chars=(opts.fillText||'PIXELIUM').toUpperCase().replace(/\s+/g,' ');
+  const chars=(opts.fillText||'PIXELALCHEMY').toUpperCase().replace(/\s+/g,' ');
   const cols=Math.floor(opts.density*1.6), rows=Math.floor(cols/aspect/2.1);
   const {data}=sampleImage(imgEl,cols,rows);
   const cW=cw/cols,cH=ch/rows, fs=Math.max(4,cH*.98);

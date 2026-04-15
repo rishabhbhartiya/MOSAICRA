@@ -12,10 +12,10 @@ export function Sidebar({ previewUrl, imgInfo, isDragging, uploadError, onFileIn
           <span className={s.brandP}>P</span><span className={s.brandX}>X</span>
         </div>
         <div className={s.brandText}>
-          <span className={s.brandName}>PIXELIUM</span>
+          <span className={s.brandName}>PIXELALCHEMY</span>
           <span className={s.brandSub}>Image Art Studio</span>
         </div>
-        <span className={s.badge}>28 FX</span>
+        <span className={s.badge}>v1.0</span>
       </div>
 
       <div className={s.scroll}>
